@@ -1,0 +1,30 @@
+﻿Lossy:
+    Lossy techniques: (the information content is reduced and it is not recoverable)
+        - Quantization
+        - Transform coding
+        - Block transform coding
+        - chroma subsampling
+        - fractal compression
+
+Lossless:
+    - para propósitos de arquivamento, imagens médicas, desenhos técnicos
+    - Lossless techniques: (the content information is not modified)
+        - Run Length coding
+        - Lossless predictive coding
+        - Multi-resolution coding
+        - area image compression
+        - entropy coding
+        - deflation
+        - chain codes
+
+
+
+
+        4984233063579527
+
+
+- https://www.quora.com/Why-is-image-compression-important
+- http://www.uni-kiel.de/Kardiologie/dicom/1999/compression1.html
+- https://whatis.techtarget.com/definition/image-compression
+- https://imagify.io/blog/lossless-vs-lossy-image-compression/
+- https://www.shawacademy.com/blog/what-is-raw-photo/

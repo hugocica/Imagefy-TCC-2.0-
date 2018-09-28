@@ -1,0 +1,129 @@
+\chapter{Fundamentação Teórica}
+\label{c.fundamentacaoteorica}
+
+Com o contínuo aumento de dispositivos conectados à Internet, há também um grande aumento na ameaça de dados que podem estar comprometidos. Medidas de segurança são implementadas diariamente para impedir que usuários mal intencionados obtenham acesso à estas informações. Uma dessas medidas são os chamados Testes de Penetração, os quais são realizados sobre supervisão do dono do dispositivo, Sistema ou Rede de Computadores, e possuem o objetivo de descobrir possíveis vulnerabilidades, verificar quais informações se é possível obter, classificar estas vulnerabilidades e oferecer um relatório com suas descobertas e possíveis soluções para tais vulnerabilidades.
+
+O intuito ao realizar Testes de Penetração, além de garantir que a segurança de um sistema esteja sempre preparada a novas ameaças, é o de verificar a aptidão a qual a equipe de uma empresa possui ao se deparar com problemas de invasão externa. Desta forma é possível classificar como Testes de Penetração como sendo um ramo da Segurança de Computadores.
+
+\section{Segurança}
+\label{s.seguranca}
+
+Desde sempre, o valor da informação foi essencial, e nos tempos atuais não é diferente. Com o aumento da tecnologia e o grande avanço de dispositivos conectados à internet, existe uma grande preferência de manter informações virtualizadas, seja pela grande capacidade de armazenamento que os sistemas computacionais possuem, ou pelo fácil acesso, por exemplo. Porém, manter informações centralizadas em um só lugar pode se tornar um problema, caso não mantenha a segurança de seus dispositivos atualizada.
+
+Para proteger dados e informações tendo em mente as diversas arquiteturas de rede que existem, {\em Web Services}, aplicações, diferentes plataformas de servidores, está mais difícil do que nunca. Por os computadores e a internet de fato estar presente no nosso dia-a-dia nas últimas décadas, invasões não são mais realizadas por crianças curiosas se aventurando no mundo dos códigos.
+
+Apesar de existirem métodos os quais previnem o roubo de dados ou invasão de sistemas, como é o caso de Anti-vírus, por exemplo, o melhor jeito de descobrir se um sistema está realmente seguro contra invasões é tentando invadir o mesmo, pois apenas assim será possível detectar problemas reais os quais indíviduos mal intesionados podem vir a causar.
+
+Estes usuários que se aproveitam de falhas do Sistema para ganho pessoal são comumente denominados como {\em hackers}.
+
+De acordo com \citeauthoronline{hackerdictionary} (\citeyear{hackerdictionary}) define um {\em hacker} como sendo uma pessoa que contenha as seguinte características:
+
+\begin{alineas}
+  \item Uma pessoa a qual aprecia aprender detalhes de uma linguagem de programação ou de um sistema;
+  \item Uma pessoa a qual aprecia programar ao invés de apenas teorizar;
+  \item Uma pessoa capaz de apreciar o {\em hackeamento} de outra pessoa;
+  \item Uma pessoa que aprende rapidamente uma linguagem de programação;
+  \item Uma pessoa que é perito em determinada linguagem de programação ou sistema computacional.
+\end{alineas}
+
+Segundo \citeauthoronline{hackerdefinition}, pode-se separar {\em hackers} em dois grupos: {\em black hats} e {\em white hats}. {\em Black Hats} é uma vertente onde {\em hackers} utilizam seu conhecimento e habilidades para se aproveitar de falhas em Sistemas e Redes de Computadores, com o objetivo de incapacitar tais sistemas ou mesmo roubar informações críticas, utilizando-as para ganho pessoal. {\em White Hats}, muito semelhantes aos {\em black hats}, também invadem Sistemas e Redes de Computadores, porém com o intuito de buscar apenas descobrir vulnerabilidades, como é possível acessá-las, e buscar encontrar novas maneiras para reparar e prevenir estas e futuras falhas, ao invés de obter acesso e usufruir dos dados obtidos.
+
+\section{Teste de Penetração}
+\label{s.pentest}
+
+No início deste capítulo, explicamos superficialmente que Testes de Penetração, ou também chamados Testes de Invasão ou {\em PenTest}, são testes realizados de modo a simular um ataque mal intencionado à uma rede, aplicação ou sistema computacional. Os testes consistem em:
+
+\begin{alineas}
+  \item Recolher informações do alvo, antes do teste (reconhecimento);
+  \item Identificar possíveis pontos de entrada;
+  \item Tentativa de invasão, seja virtualmente ou pessoalmente;
+  \item Reportar as descobertas.
+\end{alineas}
+
+O objetivo de se realizar Testes de Invasão é determinar fraquezas na segurança justamente para reforçar a mesma nos sistemas testados, prevenindo assim que dados e informações sejam roubadas ou manipuladas por um {\em Cracker}. {\em Crackers}, como já foi dito, são {\em Hackers} que violam o Código de Ética dos {\em Hackers}, segundo \citeauthoronline{hackerdictionary}. A linha que separa um {\em PenTester} de um {\em Cracker} é exatamente pelo fato de um {\em PenTester} ter sido contratado para realizar o ato de invadir o sistema, tendo uma permissão prévia concedida pelo dono do sistema. Outro ponto que realizar testes de penetração podem contribuir, além de aumento da segurança, é testar a Política de Observação de uma empresa perante possíveis ataques, bem como testar o quão preparada está uma empresa para responder a possíveis ataques, e também verificar o quão ciente estão os funcionários quanto a brechas que podem resultar em uma invasão.
+
+Testes de Invasão muitas vezes são confundidos com Avaliação de Vulnerabilidade. Porém isso é um erro comum, visto que o foco o qual se dá ao realizar um Teste de Penetração é na tentativa de ganhar um acesso ao sistema, a ponto de não existirem restrições a arquivos e dados sigilosos, enquanto que Avaliação de Vulnerabilidade tem ênfase em identificar pontos vulneráveis na segurança, não focando em tentar invadí-los.
+
+Um {\em PenTester} tem como responsabilidade tentar invadir o sistema desejado de modo que irá usar os meios e métodos que um {\em Cracker} também usaria, para garantir que o sistema está seguro. Durante o processo de invasão, o {\em PenTester} estará fazendo um relatório detalhado, passando por todos os caminhos que ele tenha tomado, para que no final esteja especificado quais são as falhas do sistema, como foram descobertas e assim arrumá-las para que não haja potencial de invasão.
+
+\subsection{Por que realizar Testes de Penetração?}
+\label{ss.whypentest}
+
+Precisa-se ter em mente de que uma falha corrigida ontem, pode resultar em uma falha imprevista hoje. Por conta disso, é importante manter constante as realizações de testes de penetração, garantindo assim um sistema seguro. Assim, é preciso estar sempre por dentro das novidades tecnológicas pois, atualizações podem ser facas de dois gumes: do mesmo modo que trazem novas medidas para prevenir quebras de segurança, podem também proporcionar novos meios para se invadir um sistema.
+
+\citeauthoronline{pentestbefore} cita que o motivo principal para realização de Testes de Penetração é de encontrar vulnerabilidades através de ganho de acesso e resolver estas falhas. Porém, além desse motivo principal, também é citado que é uma boa prática ter o sistema verificado por olhos que não estavam inicialmente no projeto, podendo assim encontrar falhas não verificadas anteriormente. Outros motivos que são citados, podemos listar os seguintes:
+
+\begin{alineas}
+  \item Achar brechas antes que alguém mal intencionado ache: invasores podem estar explorando fraquezas a todo momento para tentar achar uma brecha. Como o autor cita, testes de penetração podem ser vistos como um Exame Médico Anual pois, não importa o quão saúdavel pareça, sempre é bom manter em dia os diagnósticos;
+  \item Reportar problemas achados ao gerente responsável: muitas vezes um problema pode ser apontado, e o teste de penetração auxilia em maneiras de resolver o problema;
+  \item Verificar configurações de segurança: realizar teste de invasão contribui para garantir que o sistema esteja realmente seguro contra invasões, além de que, segundo o autor, uma opinião externa ao projeto garante que todos os pontos de vistas não possuem falhas;
+  \item Treinamento de segurança para a equipe: se um teste de penetração conseguir invadir com sucesso um sistema, isso pode indicar uma falta de treinamento por parte da equipe responsável pela segurança. Testes de penetração ajudam no treinamento da equipe, preparando para conseguirem identificar um ataque e impedí-lo antes que este seja bem sucedido;
+  \item Testar novas tecnologias: de acordo com o autor, a melhor maneira para se testar tecnologias novas, é quando elas ainda não foram lançadas. Testes de penetração podem ajudar a revelar falhas desconhecidas antes de um lançamento, para que o produto seja totalmente confiável.
+\end{alineas}
+
+% Portanto, dá-se importância à realização de Testes de Penetração por conta de ... ?
+
+\subsection{Estágios de um Teste de Penetração}
+\label{ss.stagespentest}
+
+\citeauthoronline{handson} (\citeyear{handson}) descreve os estágios que um Teste de Penetração percorre, que, de acordo com ela, totalizam em 7: Escopo, Reconhecimento, Modelo de Ameaça, Análise de Vulnerabilidade, Explorar Vulnerabilidades, Pós Exploração, Relatório.
+
+A fase de Escopo é realizada antes mesmo de se começar o Teste. Consiste em um pré-engajamento, o qual envolve definir com o cliente os objetivos que o teste irá abordar. Nesta fase, o {\em PenTester} é encarregado de explicar ao cliente sobre como os testes ocorrerão, para que não haja falta de comunicação, o que pode resultar em uma intrusão além do esperado pelo lado do cliente. Este será o momento o qual se deve sentar com o cliente o que ele espera que um Teste de Penetração resulte, toda informação será crítica. Certas dúvidas terão que ser apresentadas, como o se terá que definir a maioria dos requisitos, quais portas de IP testar, quais ações serão permitidas pelo cliente, o trabalho será superficial, apenas verificando vulnerabilidades e brechas, ou poderá tentar derrubar o sistema, qual o horário que serão realizados os testes, entre outras perguntas técnicas. Por fim, é nesta fase que deverá ser providenciado um acordo, deixando claro que todas as informações obtidas serão mantidas confidencialmente, como também concedendo autorização para realizar os testes pois, caso contrário, poderá ser considerado um crime.
+
+Após a fase de Escopo, ou Pré-engajamento, temos a fase de Reconhecimento. Durante essa fase, são analisadas informações sobre o alvo, bem como é feito uma análise de portas para se ter uma noção o tipo de sistema que se estará testando.
+
+Modelo de Ameaça é a fase na qual se desenvolve como o ataque será realizado, a partir das informações reunidas na fase de Reconhecimento. Nesta fase será o momento no qual o {\em PenTester} pensa como um invasor e tentar explorar brechas que não seriam normalmente testadas, até conseguir algum acesso, caso estas existam.
+
+Durante a fase de Análise de Vulnerabilidades, o {\em PenTester} fica responsável por descobrir vulnerabilidades que poderão vir a ser exploradas de modo que o teste seja bem sucedido. Nessa fase, será feita uma leitura das possíveis vulnerabilidades utilizando softwares que utilizam uma série de verificações. Porém não se pode confiar totalmente no software, sendo necessário também fazer uma análise manual, verificando a leitura dos resultados.
+
+A quinta fase, a qual \citeauthoronline{handson} nomeou de Exploração de Vulnerabilidades, é onde o teste realmente ocorre. Nesta etapa, o {\em PenTester} irá se utilizar das brechas encontradas na etapa anterior e tentará explorar o máximo delas até que consiga realizar a invasão propriamente dita.
+
+Na fase de de Pós Exploração, ocorre a análise dos dados coletados através da invasão, procurando por algum conteúdo com alto valor de informação, tentar conseguir acesso privilegiado ao sistema. De acordo com a autora, nesta parte será possível ver se as vulnerabilidades são realmente significativas, pois se somente for conseguido acesso a arquivos que não contém uma informação tão crítica, ainda será necessário resolvê-las, porém não são consideradas vulnerabilidades de alta prioridade.
+
+A fase final será apresentado o relatório a respeito das descobertas encontradas. O relatório apresentado deve conter os pontos positivos a respeito do sistema do cliente, bem como deve estar bem detalhado a respeito de todos os passos tomados, como foi feita a invasão, para que seja possível reproduzir e, assim, resolver as vulnerabilidades encontradas. Um bom relatório pode ser dividido em Sumário Executivo e Relatório Técnico.
+% \subsection{Teste de Penetração como Área Forense}
+% \label{s.pentestforense}
+
+\section{Computação na Nuvem}
+\label{s.cloudcomputing}
+
+Computação na Nuvem é um termo designado para especificar um serviço de hospedagem de serviços utilizando a Internet, ou seja, ao invés de ser necessário montar um servidor com todos os requisitos necessários, se é alugado um espaço de um servidor e seu acesso é feito pela Internet, pagando somente por aquilo que se é usado.
+
+Dentre os diversos benefícios que a Computação na Nuvem trás, podemos listar:
+
+\begin{alineas}
+  \item Os recursos oferecidos suprem a maioria das demandas de quase todos os ramos de empresas;
+  \item Elasticidade, ou seja, o poder de aumentar ou diminuir os recursos, conforme se é necessário;
+  \item Pagar somente pelos recursos que são utilizados.
+\end{alineas}
+
+\subsection{Tipos de Serviços na Nuvem}
+\label{s.cloudservices}
+
+Segundo \citeauthoronline{clouddefinition}, em '{\em A comprehensive look at the path to cloud migrations}', Serviços de Computação na Nuvem são divididos nos seguintes tipos:
+
+\begin{alineas}
+  \item Privado;
+  \item Público;
+  \item Hibrido.
+\end{alineas}
+
+Serviço na Nuvem do tipo Privado ocorre quando o servidor, o qual estão todos os arquivos e dados, se localiza internamente na própria empresa, mesmo não estando no ambiente de trabalho das equipes. Normalmente existe uma sala para conter os diversos {\em hardwares} e recursos que suprem a necessidade. Esse tipo é bastante usado por empresas visto que, por estarem localizados internamente, são ambientes de trabalho mais seguros, por oferecer controle total dos recursos e não compartilhar estes recursos ou informações com outras empresas.
+
+O segundo tipo abordado pela autora, Serviço de Nuvem Público, é o tipo oferecido pelos grandes {\em Datacenters} como Google ou Amazon, por exemplo, e pode ser contratado por qualquer empresa. É a opção mais acessível pois os recursos computacionais são oferecidos através da Internet, e o seu custo é somente por recursos utilizados pela empresa. Uma grande vantagem da Nuvem Pública é que é possível escalonar os recursos conforme for necessário, ou seja, se for necessários mais recursos computacionais, a empresa terá que configurar os recursos de forma a suprir as necessidades, podendo diminuir posteriormente, pagando apenas o que foi utilizado. A desvantagem que faz com que muitas empresas ficarem em dúvidas se migram para esse tipo de Computação na Nuvem é o fator de que os recursos oferecidos estão localizados externamente aos da empresa contratante, o que levanta desconfiança quanto à segurança de dados.
+
+O último tipo citado, Nuvem Híbrida, é uma associação dos tipos privado e público. Com a nuvem híbrida, é possível tratar com informações sensíveis na nuvem privada, o que elimina incertezas e desconfianças relacionadas ao sigilo de informação. Ao mesmo tempo que arquivos menos críticos, como backup, email e armazenamento de dados estáticos, podem ser hospedados utilizando nuvem pública, o que proporciona maior elasticidade e menos custo em relação à recursos internos.
+
+\subsection{Categorias de Serviços na Nuvem}
+\label{s.cloudcategories}
+
+\citeauthoronline{cloudexplained}, em seu artigo sobre introdução à Computação na Nuvem, cita os seguintes modelos de Serviços na Nuvem:
+
+\begin{alineas}
+  \item IaaS ({\em Infrastructure as a Service}): neste caso se tem acesso ao hardware de um sistema externo, como serviços de armazenamento ou servidores;
+  \item PaaS ({\em Platform as a Service}): se é utilizado tanto o software quanto o hardware fornecidos pelo serviço contratado;
+  \item SaaS ({\em Software as a Service}): significa que se utiliza o software do sistema oferecido.
+\end{alineas}
+
+% \subsection{Testes de Penetração em Sistemas na Nuvem}
+% \label{s.pentestincloud}
