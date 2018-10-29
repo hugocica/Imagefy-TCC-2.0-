@@ -53,20 +53,69 @@ Para casos de codificação na qual uma imagem em duas dimensões será comprimi
 
 A linearização não afeta a frequência da codificação, sendo esse método aplicado para alguns casos. Como Huffman depende somente da frequência dos diferentes tons de cinza, o método não é afetado pela linearização. Agora métodos como Liv-Zempel dependem da ordem dos tons de cinza, sendo então afetados por métodos de linearização.
 
-Imagens possuem o que é chamado de redundância local.
+Imagens possuem o que é chamado de redundância local, o que causa uma certa região da imagem a exibir uma coerência ou correlação, resultando em uma suavidade entre os pixels. Alguns métodos de linearização são mais efetivos que outros em se tratando de preservar essa região e, por isso, são esperados terem melhor desempenho quando combinadas com métodos de codificação que se utilizam dessas regiões de redundância.
 
-\subsection{Métodos de Domínio Espacial}
-\label{ss.spacialmethod}
+Abaixo está uma lista dos métodos de linearização mais utilizados, segundo \citeauthoronline{losslessmethods}:
 
-\subsection{Métodos de Domínio de Frequência}
-\label{ss.transformmethod}
+\begin{alineas}
+    \item Verificação orientada por linha ({\em Row-Major Scan}): a imagem é verificada linha por linha, sentido cima-esquerda para baixo-direita;
+    \item Verificação orientada por coluna ({\em Column-Major Scan}): a imagem é verificada coluna por coluna, com sentido cima-esquerda para baixo-direita;
+    \item Verificação orientada por diagonal ({\em Diagonal Scan}): a imagem é verificada em diagonais, começando do canto inferior esquerdo para o canto superior direito;
+    \item Verificação em formato de cobra ({\em Snake-like row-major Scan}): é uma variação da verificação orientada por linhas e orientada por colunas. Nela, ao chegar no final de uma linha, segue para a linha de baixo continuando na mesma coluna;
+    \item Verificação em espiral ({\em Spiral Scan}): nesse método,;
+    \item Verificação de Peano-Hilbert ({\em Peano-Hilbert Scan}): essa verificação requer que a imagem seja \[ 2^k * 2^k \]. Quando {\em k} é ímpar, o caminho percorrido começa no pixel mais a esquerda da primeira linha e termina no pixel mais a esquerda da última linha. Quando {\em k} é par, o caminho começa no pixel mais a esquerda da primeira linha e termina no pixel mais a direita da última linha.;
+\end{alineas}
+
+Segundo o autor, embora que nenhum método de linearização forneça a melhor compressão, a verificação de Peano-Hilbert geralmente traz o melhor resultado.
+
+\subsubsection{Métodos de Domínio Espacial}
+\label{sss.spacialmethod}
+
+\paragraph{Codificação de Huffman}
+\label{sss.spacialmethod}
+
+Nesse método, a redundância de codificação é eliminada com base numa codificação que produz um código de tamanho variável, atribuindo os códigos de tamanhos menores aos níveis de cinza mais prováveis de ocorrer.
+
+Esse método possui duas etapas:
+
+\begin{alineas}
+    \item Cria-se uma série de reduções dos símbolos através da junção dos dois de menores probabilidades a cada iteração.
+    \item Codificam-se todos os símbolos que foram reduzidos, começando com o de maior probabilidade que será associado ao menor código e voltando para os originais.
+\end{alineas}
+
+Exemplo: imagem de tamanho 10x10 e 6 tons de cinza (a1, a2, a3, a4, a5, a6), tendo as seguintes probabilidades de ocorrência: 5/8 de a1, 3/32 de a2 e a3, 1/32 de a6 e a4, e 1/8 de a5.
+
+\begin{figure}[h]
+\caption{\small Primeira etapa de codificação de Huggman.}
+\centering
+\includegraphics[scale=0.50]{figs/huffman_etapa1.jpg}
+\label{f.huffmanetapa1}
+\end{figure}
+
+Tabela referente a segunda etapa da codificação de Huffman para as probabilidades das palavras mostradas na figura anterior.
+
+\begin{table}[]
+\begin{tabular}{llr}
+Informação & Probabilidade & Código \\
+a1         & 5/8 = 20/32   & 0      \\
+a10        & 3/8 = 12/32   & 1      \\
+a9         & 7/32          & 10     \\
+a8         & 5/32          & 11     \\
+a5         & 1/8 = 4/32    & 101    \\
+a2         & 3/32          & 100    \\
+a3         & 3/32          & 110    \\
+a7         & 2/32          & 111    \\
+a4         & 1/32          & 1110   \\
+a6         & 1/32          & 1111
+\end{tabular}
+\end{table}
+
+Para transmitir essa informação, obtem-se uma taxa média de bits/informação seguindo a seguinte fórmula:
+
+\[ (5/8)*1 + (3/32)*3 + (3/32)*3 + (4/32)*3 + (1/32)*4 + (1/32)*4 = 1,813 \] {\em bits}/informação
+
+\subsubsection{Métodos de Domínio de Frequência}
+\label{sss.transformmethod}
 %
 % De acordo com \citeauthoronline{hackerdictionary} (\citeyear{hackerdictionary}) define um {\em hacker} como sendo uma pessoa que contenha as seguinte características:
 %
-% \begin{alineas}
-%   \item Uma pessoa a qual aprecia aprender detalhes de uma linguagem de programação ou de um sistema;
-%   \item Uma pessoa a qual aprecia programar ao invés de apenas teorizar;
-%   \item Uma pessoa capaz de apreciar o {\em hackeamento} de outra pessoa;
-%   \item Uma pessoa que aprende rapidamente uma linguagem de programação;
-%   \item Uma pessoa que é perito em determinada linguagem de programação ou sistema computacional.
-% \end{alineas}
