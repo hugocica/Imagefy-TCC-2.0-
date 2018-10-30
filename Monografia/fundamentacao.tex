@@ -10,7 +10,6 @@ Considere as imagens abaixo.
 \centering
 \includegraphics[scale=0.50]{figs/image_compression.jpg}
 \label{f.imagecompressionbasics}
-\legend{\small Fonte: Elaborada pelo autor.}
 \end{figure}
 
 Quando o sistema recebe a imagem original, ele manda para um codificador que converte a imagem original para um fluxo de bits. Um decodificador então recebe esse fluxo de bits e o transforma novamente na imagem. Caso o fluxo de bits final seja menor que o original, chamamos esse processo de Compressão de Imagem.
@@ -113,7 +112,7 @@ Tabela referente a segunda etapa da codificação de Huffman para as probabilida
 
 Para transmitir essa informação, obtem-se uma taxa média de bits/informação seguindo a seguinte fórmula:
 
-\[ (5/8)*1 + (3/32)*3 + (3/32)*3 + (4/32)*3 + (1/32)*4 + (1/32)*4 = 1,813 \] {\em bits}/informação.
+\[ (5/8)*1 + (3/32)*3 + (3/32)*3 + (4/32)*3 + (1/32)*4 + (1/32)*4 = 1,813 \]
 
 \subsubsection{Codificação por LZW}
 \label{sss.lzw}
@@ -143,11 +142,50 @@ Muitos algoritmos dessa técnica são usadas nos métodos de compressão {\em Lo
 \subsubsection{Compressão de Tamanho de Bloco Variável}
 \label{sss.variableblock}
 
+\citeauthor{ranganathan} desenvolveu um algoritmo de compressão de imagens sem perda o qual explora redundâncias locais e globais da imagem. O algoritmo separa a imagem em blocos de tamanho variável e os codifica baseado nas propriedades que os pixels exibem no conjunto de cada bloco. Essa codificação é alcançada através do método de codificação por tons corridos (RLE) quando todos os pixels contidos no mesmo bloco possuem a mesma variação de tons de cinza, explorando assim a redundância local da imagem. Esse algoritmo explora a redundância global ao verificar se na região presente, existem blocos idênticos na região vizinha.
+
 \subsubsection{Abordagem residual + Lossy}
 \label{sss.lossyresidual}
 
-\subsubsection{Algoritmos de Compreesão Contextuais}
-\label{sss.contextbased}
+O conceito desse método se dá de maneira que uma imagem já comprimida por métodos {\em Lossy}, de maneira que a imagem em si não seria possível ser reconstruída com todos os dados originais, é enviada seguida de resíduos da imagem original. Desse modo, é possível recontruí-la ao seu estado original.
+
+Uma maneira de transmitir dados do tipo {\em Lossy} é através do resultado final de um algoritmo {\em Lossy}. Os resíduos da imagem original podem ser obtidos através de linearização, ou mesmo através de uma sequência de métodos efetivos de compressão, como Huffman citado anteriormente. Esse resíduo é basicamente a diferença da imagem original e a imagem reconstruída a partir da imagem comprimida.
+
+A vantagem desse método é que utiliza de métodos {\em Lossy}, os quais possibilitam uma taxa alta de compressão.
+
+Um exemplo desse método seria o conceito da compressão JPEG. Embora JPEG seja um tipo de compressão com perda, seu conceito foi capaz de basear algoritmos {\em Lossless}. O conceito especifica dois métodos de codificação para operações {\em lossless}:
+
+\begin{alineas}
+    \item Método de codificação de Huffman
+    \item Método com codificação aritmética
+\end{alineas}
+
+Essa abordagem JPEG utiliza de técnicas de código preditivo e é totalmente independente de codificação utilizando transformadas, sendo que aplica codificação diferencial de forma a gerar os resíduos, sendo então codificados usando ou a técnica de Huffman ou codificação aritmética. Os resíduos são formado utilizando pixels previamente codificados na coluna atual ou então na coluna anterior. O residual {\em x} de um pixel é definido como sendo \[ R = Px - x \] onde {\em Px} é o valor previsto e pode ser qualquer valor definido na Tabela \ref{t.jpegstandart}, onde os valores {\em a}, {\em b} e {\em c} são pixels vizinhos ao pixel que está sendo analizado, como mostra Figura \ref{f.jpegstandart}.
+
+\begin{table}[]
+    \begin{center}
+        \caption{\small Valores de predição para o método JPEG sem perda}
+        \label{t.jpegstandart}
+        \begin{tabular}{llr}
+            Valor selecionado   & Equação de predição   \\
+            0                   & sem predição          \\
+            1                   & Px = a                \\
+            2                   & Px = b                \\
+            3                   & Px = c                \\
+            4                   & Px = a + b - c        \\
+            5                   & Px = a + (b - c)/2    \\
+            6                   & Px = b + (a - c)/2    \\
+            7                   & Px = (a + b)/2        \\
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{figure}[h]
+\caption{\small Amostras utilizadas pela predição JPEG sem perda}
+\centering
+\includegraphics[scale=0.50]{figs/jpeg_standart.png}
+\label{f.jpegstandart}
+\end{figure}
 
 \subsection{Métodos de Domínio de Frequência}
 \label{ss.transformmethod}

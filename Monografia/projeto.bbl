@@ -5,13 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
-\bibitem[COMPUTAÇÃO Gráfica - Vol. 2 - Cap. 8 - Compressão de
-  Imagem]{losslesscodings}
-\abntrefinfo{COMPUTAÇÃO\ldots}{COMPUTAÇÃO\ldots}{}
-{COMPUTAÇÃO Gráfica - Vol. 2 - Cap. 8 - Compressão de Imagem.
-  \url{http://computacaografica.ic.uff.br/transparenciasvol2cap8.pdf}.
-[Acessado em 18 de Agosto de 2018].}
-
 \bibitem[Hansan et al. 2012]{pasteldeflango}
 \abntrefinfo{Hansan et al.}{HANSAN et al.}{2012}
 {HANSAN, M. et al. \emph{Spatial Domain Lossless Image Compression Technique by
@@ -19,12 +12,26 @@
   of Computer Science and Information Technologies, 2012.
 ISBN 09759646.}
 
+\bibitem[Jessop]{losslesscodings}
+\abntrefinfo{Jessop}{JESSOP}{}
+{JESSOP, R. \emph{Lossy Image Compression}.
+  \url{http://access.ee.ntu.edu.tw/course/SOC2004/Version%203/Case%20Study/Ref/Lossy%20Image%20Compression.pdf}.
+[Acessado em 14 de Agosto de 2018].}
+
 \bibitem[Lin 2009]{linauthor}
 \abntrefinfo{Lin}{LIN}{2009}
 {LIN, P. \emph{Basic Image Compression Algorithm and Introduction to JPEG
   Standard}. 2009.
   \url{http://disp.ee.ntu.edu.tw/meeting/%E4%BF%9D%E8%A8%80/Basic%20Image%20Compression%20Algorithm%20and%20Introduction%20of%20JPEG%20Standard/Basic%20Image%20Compression%20Algorithm%20and%20Introduction%20of%20JPEG%20Standard.pdf}.
 [Acessado em 22 de Maio de 2018].}
+
+\bibitem[Ranganathan, S.G. e Namuduri 1995]{ranganathan}
+\abntrefinfo{Ranganathan, S.G. e Namuduri}{RANGANATHAN; S.G.; NAMUDURI}{1995}
+{A lossless image compression algorithm usin bariable block size segmentation.
+  In:  RANGANATHAN, N.; S.G., R.; NAMUDURI, K. (Ed.). \emph{IEEE Transactions
+  on Image Processing}. Vol 4. [s.n.], 1995. p. 1396--1406.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/B9780123736246500059}.}
 
 \bibitem[Rao]{mackenzielossless}
 \abntrefinfo{Rao}{RAO}{}

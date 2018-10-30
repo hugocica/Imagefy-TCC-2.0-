@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.29)  30 OCT 2018 01:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.29)  30 OCT 2018 13:23
 entering extended mode
 **D:/Denis/Documents/workspace/Imagefy-TCC-2.0-/Monografia/projeto.tex
 (D:/Denis/Documents/workspace/Imagefy-TCC-2.0-/Monografia/projeto.tex
@@ -1413,47 +1413,67 @@ LaTeX Warning: Citation `linauthor' on page 12 undefined on input line 13.
 ]) (objetivos.tex [13]) (fundamentacao.tex [14
 
 ]
-<figs/image_compression.jpg, id=148, 414.43723pt x 63.74124pt>
+<figs/image_compression.jpg, id=156, 414.43723pt x 63.74124pt>
 File: figs/image_compression.jpg Graphic file (type jpg)
 <use figs/image_compression.jpg>
 Package pdftex.def Info: figs/image_compression.jpg  used on input line 11.
 (pdftex.def)             Requested size: 207.2181pt x 31.87053pt.
  [15
 
- <./figs/image_compression.jpg>]
+ <./figs/image_compression.jpg>] [16] [17]
 
-LaTeX Warning: Citation `linauthor' on page 16 undefined on input line 29.
+LaTeX Warning: Citation `losslesscodings' on page 18 undefined on input line 83
+.
 
-[16] [17]
-<figs/huffman_etapa1.jpg, id=178, 288.03261pt x 313.17pt>
+<figs/huffman_etapa1.jpg, id=185, 288.03261pt x 313.17pt>
 File: figs/huffman_etapa1.jpg Graphic file (type jpg)
 <use figs/huffman_etapa1.jpg>
 Package pdftex.def Info: figs/huffman_etapa1.jpg  used on input line 88.
 (pdftex.def)             Requested size: 144.01595pt x 156.58461pt.
 
-
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 94.
 
-[18 <./figs/huffman_etapa1.jpg>] [19]) (metodologia.tex [20]) (projeto.bbl
+[18 <./figs/huffman_etapa1.jpg>] [19] [20]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 166.
+
+<figs/jpeg_standart.png, id=207, 308.65312pt x 176.15813pt>
+File: figs/jpeg_standart.png Graphic file (type png)
+<use figs/jpeg_standart.png>
+Package pdftex.def Info: figs/jpeg_standart.png  used on input line 187.
+(pdftex.def)             Requested size: 154.32617pt x 88.07884pt.
+) (metodologia.tex [21 <./figs/jpeg_standart.png>] [22]) (projeto.bbl
 (projeto.brf)
 \tf@brf=\write6
 \openout6 = `projeto.brf'.
 
- [21
+ [23
 
-] [22]
+] [24]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
 Runaway argument?
+ \abntrefinfo {Jessop}{JESSOP}{} {JESSOP, R. \emph {Lossy Image Compr\ETC.
+! Paragraph ended before \BR@@lbibitem was complete.
+<to be read again> 
+                   \par 
+l.20 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
  \abntrefinfo {Lin}{LIN}{2009} {LIN, P. \emph {Basic Image Compressio\ETC.
 ! Paragraph ended before \BR@@lbibitem was complete.
 <to be read again> 
                    \par 
-l.28 
+l.27 
      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1463,7 +1483,7 @@ My plan is to forget the whole thing and hope for the best.
 No file projeto.ind.
 
 AED: lastpage setting LastPage
-[23
+[25
 
 ]
 \tf@lof=\write7
@@ -1480,14 +1500,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
  (projeto.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 389.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
+Package rerunfilecheck Info: File `projeto.brf' has not changed.
+(rerunfilecheck)             Checksum: D7FBBEBA18938533E6BFBA3ADD1CB1B1;441.
 
-
-Package rerunfilecheck Warning: File `projeto.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `projeto.brf':
-(rerunfilecheck)             Before: E304ED37E5C609815A6AAD3211CDD14D;423
-(rerunfilecheck)             After:  92EFD1756F783B5899ACCC0F070F8C11;425.
 
 LaTeX Warning: There were undefined references.
 
@@ -1497,11 +1512,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 389.
  ) 
 Here is how much of TeX's memory you used:
- 24952 strings out of 492970
- 440544 string characters out of 3126593
- 670294 words of memory out of 3000000
- 28134 multiletter control sequences out of 15000+200000
- 88854 words of font info for 139 fonts, out of 3000000 for 9000
+ 24979 strings out of 492970
+ 440934 string characters out of 3126593
+ 670960 words of memory out of 3000000
+ 28143 multiletter control sequences out of 15000+200000
+ 89408 words of font info for 143 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,12n,54p,1444b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
@@ -1518,9 +1533,9 @@ onts/type1/public/lm/lmss17.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/hcica/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:/Users/hcica/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on projeto.pdf (24 pages, 268955 bytes).
+Output written on projeto.pdf (26 pages, 281313 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 86 named destinations out of 1000 (max. 500000)
- 22815 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 406 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
+ 22836 words of extra memory for PDF output out of 24883 (max. 10000000)
 
