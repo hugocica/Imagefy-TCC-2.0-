@@ -1,0 +1,43 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[COMPUTAÇÃO Gráfica - Vol. 2 - Cap. 8 - Compressão de
+  Imagem]{losslesscodings}
+\abntrefinfo{COMPUTAÇÃO\ldots}{COMPUTAÇÃO\ldots}{}
+{COMPUTAÇÃO Gráfica - Vol. 2 - Cap. 8 - Compressão de Imagem.
+  \url{http://computacaografica.ic.uff.br/transparenciasvol2cap8.pdf}.
+[Acessado em 18 de Agosto de 2018].}
+
+\bibitem[Hansan et al. 2012]{pasteldeflango}
+\abntrefinfo{Hansan et al.}{HANSAN et al.}{2012}
+{HANSAN, M. et al. \emph{Spatial Domain Lossless Image Compression Technique by
+  Reducing Overhead Bits and Run Length Coding}. [S.l.]: International Journal
+  of Computer Science and Information Technologies, 2012.
+ISBN 09759646.}
+
+\bibitem[Lin 2009]{linauthor}
+\abntrefinfo{Lin}{LIN}{2009}
+{LIN, P. \emph{Basic Image Compression Algorithm and Introduction to JPEG
+  Standard}. 2009.
+  \url{http://disp.ee.ntu.edu.tw/meeting/%E4%BF%9D%E8%A8%80/Basic%20Image%20Compression%20Algorithm%20and%20Introduction%20of%20JPEG%20Standard/Basic%20Image%20Compression%20Algorithm%20and%20Introduction%20of%20JPEG%20Standard.pdf}.
+[Acessado em 22 de Maio de 2018].}
+
+\bibitem[Rao]{mackenzielossless}
+\abntrefinfo{Rao}{RAO}{}
+{Capítulo 3 - processos de compressÃo. In:  RAO, V. B. C.~Y. (Ed.).
+  \emph{Revista Mackenzie de Engenharia e Computação}. Ano 5. [s.n.]. p. 34
+  -- 43.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/B9780123736246500059}.}
+
+\bibitem[Vemuri et al.]{losslessmethods}
+\abntrefinfo{Vemuri et al.}{VEMURI et al.}{}
+{VEMURI, B.~C. et al. \emph{Lossless Image Compression}.
+  \url{https://www.researchgate.net/profile/Sartaj_Sahni/publication/2555508_Lossless_Image_Compression/links/54340d4a0cf2bf1f1f27b3d4.pdf}.
+[Acessado em 18 de Agosto de 2018].}
+
+\end{thebibliography}

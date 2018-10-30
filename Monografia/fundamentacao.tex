@@ -15,18 +15,18 @@ Considere as imagens abaixo.
 
 Quando o sistema recebe a imagem original, ele manda para um codificador que converte a imagem original para um fluxo de bits. Um decodificador então recebe esse fluxo de bits e o transforma novamente na imagem. Caso o fluxo de bits final seja menor que o original, chamamos esse processo de Compressão de Imagem.
 
-Durante a compressão de uma imagem, pode-se ter perda de dados durante o processo. Por essa razão, o decodificador não consegue reconstruir a imagem perfeitamente para seu estado inicial. Esse tipo de compressão é chamado de Lossy, e esse processo é irreversível. O processo no qual a imagem pode retornar ao seu estado inicial é chamado de {\em Lossless}, o qual é possível reduzir o tamanho em disco, sem ter perda de dados durante o processo, sendo esse um processo reversível.
+\citeauthor{mackenzielossless} diz que durante a compressão de uma imagem, pode-se ter perda de dados durante o processo. Por essa razão, o decodificador não consegue reconstruir a imagem perfeitamente para seu estado inicial. Esse tipo de compressão é chamado de Lossy, e esse processo é irreversível. O processo no qual a imagem pode retornar ao seu estado inicial é chamado de {\em Lossless}, o qual é possível reduzir o tamanho em disco, sem ter perda de dados durante o processo, sendo esse um processo reversível.
 
 \section{Métodos de Compressão de Imagem Sem Perda}
 \label{s.lossless}
 
 São os chamados tipos de compressão {\em Lossless}. Neles, como dito anteriormente, é possível restaurar todos os dados originais da Imagem ao descompacta-la. Esse tipo de compressão é geralmente usado para arquivos de imagem de extensão GIF, formato usado na internet o qual são permitidas animação de imagens e utilização de transparência.
 
-De acordo com \citeauthoronline{losslessmethods} (\citeyear{losslessmethods}) define que compressão de imagens do tipo {\em Lossless}, também conhecidas como Compressão de Imagem Sem Perda, podem ser alcançadas através de Métodos de Codificação, Domínio Espacial, Domínio de Frequência, os quais são baseados em Transformadas, são uma combinação desses métodos.
+De acordo com \citeauthor{losslessmethods} define que compressão de imagens do tipo {\em Lossless}, também conhecidas como Compressão de Imagem Sem Perda, podem ser alcançadas através de Métodos de Codificação, Domínio Espacial, Domínio de Frequência, os quais são baseados em Transformadas, são uma combinação desses métodos.
 
 Métodos de codificação são diretamente aplicados a imagens de formato RAW, o qual é o formato mais puro de uma imagem, normalmente sendo gerado a partir de câmeras profissionais. Esse formato acumula todos os dados necessários da imagem, como abertura da câmera, tipo da câmera, ISO utilizada, entre outras informações. O método de codificação trata a imagem como uma sequência de números discretos. Métodos comuns dessa incluem aritmética, Huffman, Lempel-Ziv Welch e Run-Length.
 
-Métodos de domínio espacial são uma combinação de algoritmos de domínio espacial e métodos de codificação. Eles não somente operam diretamente nos tons de cinza, que são tons atribuidos a um pixel sendo 0 equivalente a branco e 100 equivalente a preto, como também tentam eliminar a redundância espacial. Essa redundância consiste na semelhança de pixels adjacentes de uma imagem. Um exemplo disso seria uma imagem de um avião passando no céu sem nuvens, na qual a informação relevante a ser transmitida é o avião, e o fundo é a parte da imagem azul cujo conteúdo da imagem é praticamente uniforme.
+Métodos de domínio espacial são uma combinação de algoritmos de domínio espacial e métodos de codificação. Eles não somente operam diretamente nos tons de cinza, que são tons atribuidos a um pixel sendo 0 equivalente a branco e 100 equivalente a preto, como também tentam eliminar a redundância espacial. Essa redundância consiste na semelhança de pixels adjacentes de uma imagem. Suponhamos o seguinte exemplo: uma imagem de um avião passando no céu sem nuvens, na qual a informação relevante a ser transmitida é o avião, e o fundo é a parte da imagem azul cujo conteúdo da imagem é praticamente uniforme.
 
 Na compressão de domínos de frequência, a imagem é representada usando uma base apropriada, com o objetivo de se obter um coeficiente de matriz pequeno. Transformada do Cosseno Discreto (DCT) e Transformada Wavelet são exemplos de compressão de domínio de frequência.
 
@@ -55,7 +55,7 @@ A linearização não afeta a frequência da codificação, sendo esse método a
 
 Imagens possuem o que é chamado de redundância local, o que causa uma certa região da imagem a exibir uma coerência ou correlação, resultando em uma suavidade entre os pixels. Alguns métodos de linearização são mais efetivos que outros em se tratando de preservar essa região e, por isso, são esperados terem melhor desempenho quando combinadas com métodos de codificação que se utilizam dessas regiões de redundância.
 
-Abaixo está uma lista dos métodos de linearização mais utilizados, segundo \citeauthoronline{losslessmethods}:
+Abaixo está uma lista dos métodos de linearização mais utilizados, segundo \citeauthor{losslessmethods}:
 
 \begin{alineas}
     \item Verificação orientada por linha ({\em Row-Major Scan}): a imagem é verificada linha por linha, sentido cima-esquerda para baixo-direita;
@@ -68,10 +68,7 @@ Abaixo está uma lista dos métodos de linearização mais utilizados, segundo \
 
 Segundo o autor, embora que nenhum método de linearização forneça a melhor compressão, a verificação de Peano-Hilbert geralmente traz o melhor resultado.
 
-\subsubsection{Métodos de Domínio Espacial}
-\label{sss.spacialmethod}
-
-\paragraph{Codificação de Huffman}
+\subsubsection{Codificação de Huffman}
 \label{sss.huffmancoding}
 
 Nesse método, a redundância de codificação é eliminada com base numa codificação que produz um código de tamanho variável, atribuindo os códigos de tamanhos menores aos níveis de cinza mais prováveis de ocorrer.
@@ -83,7 +80,7 @@ Esse método possui duas etapas:
     \item Codificam-se todos os símbolos que foram reduzidos, começando com o de maior probabilidade que será associado ao menor código e voltando para os originais.
 \end{alineas}
 
-Exemplo: imagem de tamanho 10x10 e 6 tons de cinza (a1, a2, a3, a4, a5, a6), tendo as seguintes probabilidades de ocorrência: 5/8 de a1, 3/32 de a2 e a3, 1/32 de a6 e a4, e 1/8 de a5.
+\citeauthor{losslesscodings} dá o seguinte exemplo: imagem de tamanho 10x10 e 6 tons de cinza (a1, a2, a3, a4, a5, a6), tendo as seguintes probabilidades de ocorrência: 5/8 de a1, 3/32 de a2 e a3, 1/32 de a6 e a4, e 1/8 de a5.
 
 \begin{figure}[h]
 \caption{\small Primeira etapa de codificação de Huggman.}
@@ -95,26 +92,30 @@ Exemplo: imagem de tamanho 10x10 e 6 tons de cinza (a1, a2, a3, a4, a5, a6), ten
 Tabela referente a segunda etapa da codificação de Huffman para as probabilidades das palavras mostradas na figura anterior.
 
 \begin{table}[]
-\begin{tabular}{llr}
-Informação & Probabilidade & Código \\
-a1         & 5/8 = 20/32   & 0      \\
-a10        & 3/8 = 12/32   & 1      \\
-a9         & 7/32          & 10     \\
-a8         & 5/32          & 11     \\
-a5         & 1/8 = 4/32    & 101    \\
-a2         & 3/32          & 100    \\
-a3         & 3/32          & 110    \\
-a7         & 2/32          & 111    \\
-a4         & 1/32          & 1110   \\
-a6         & 1/32          & 1111
-\end{tabular}
+    \begin{center}
+        \caption{\small Segunda etapa da codifiçãode Huggman}
+        \label{t.huffmanetapa2}
+        \begin{tabular}{llr}
+            Informação & Probabilidade & Código \\
+            a1         & 5/8 = 20/32   & 0      \\
+            a10        & 3/8 = 12/32   & 1      \\
+            a9         & 7/32          & 10     \\
+            a8         & 5/32          & 11     \\
+            a5         & 1/8 = 4/32    & 101    \\
+            a2         & 3/32          & 100    \\
+            a3         & 3/32          & 110    \\
+            a7         & 2/32          & 111    \\
+            a4         & 1/32          & 1110   \\
+            a6         & 1/32          & 1111
+        \end{tabular}
+    \end{center}
 \end{table}
 
 Para transmitir essa informação, obtem-se uma taxa média de bits/informação seguindo a seguinte fórmula:
 
 \[ (5/8)*1 + (3/32)*3 + (3/32)*3 + (4/32)*3 + (1/32)*4 + (1/32)*4 = 1,813 \] {\em bits}/informação.
 
-\paragraph{Codificação por LZW}
+\subsubsection{Codificação por LZW}
 \label{sss.lzw}
 
 Lempel, Ziv e Welch propuseram um método de codificação adaptável que não requer que todos que irão ser compressados, estejam disponíveis desde o começo. Essa técnica gera o código conforme o vai examinando, do começo ao fim. Na codificação por Huffman, um código de tamanho variável é construído para cada símbolo no código fonte. Na codificação Lampel-zev, códigos de tamanho fixo são construídos a medida que o processo vai rodando, para cada sequência de símbolos de tamanho variável.
@@ -123,11 +124,30 @@ Suponhamos que os símbolos que ocorrem em um código seja {\em a}, {\em b}, e {
 
 O método de compressão gzip, utilizado por sistemas Unix, utiliza uma combinação dos métodos de Huffman e LZW.
 
-\paragraph{Codificação por Código de Tons Corridos (RLE)}
+\subsubsection{Codificação por Código de Tons Corridos (RLE)}
 \label{sss.runlength}
 
-\subsubsection{Métodos de Domínio de Frequência}
-\label{sss.transformmethod}
-%
-% De acordo com \citeauthoronline{hackerdictionary} (\citeyear{hackerdictionary}) define um {\em hacker} como sendo uma pessoa que contenha as seguinte características:
-%
+Nesse método, o código fonte é dividido em segmentos de símbolos idênticos. Cada segmento é separado por um símbolo e o número de ocorrências.
+
+Para elucidar, suponha a cadeia {\em aaaabaaabb}. Ela é codificada como (a, 4), (b, 1), (a, 3), (b, 3). Esse método de codificação funcional bem para cadeias que possuem segmentos grandes, como imagens com fundos uniformes, porém esse método não é tão eficaz quando as cadeias possuem muitos segmentos curtos
+
+\subsection{Métodos de Domínio Espacial}
+\label{ss.transformmethod}
+
+\citeauthor{pasteldeflango} diz que os algoritmos de domínio espacial envolvem métodos para reduzir o número de bits que representam a informação contida na imagem operando diretamente em seu formato mais cru, o qual contém maior número de informações. Tais métodos geralmente envolvem duas etapas. O primeiro estágio envolve o uso de técnicas como segmentação de imagem, amostras e interpolarização. Essa etapa é seguida por uma aproveita eficientemente as codificações produzidas pela primeira etapa.
+
+Na primeira etapa, técnicas de segmentação de imagem incluem métodos de partição da imagem em formatos regulares, tais como retângulos, os quais ocupam menor armazenamento para codificar o formato devido a simplicidade, mas também podem assumir formatos irregulares, sendo esses últimos possuem um maior armazenamento devido a complexidade dos formatos resultantes do algoritmo de segmentação. Formatos mais simples necessitam de poucos bits para codificar a forma, mas possuem a restrição na representação, tendo um maior número de formas mais simples para representar a imagem total.
+
+Muitos algoritmos dessa técnica são usadas nos métodos de compressão {\em Lossy}.
+
+\subsubsection{Compressão de Tamanho de Bloco Variável}
+\label{sss.variableblock}
+
+\subsubsection{Abordagem residual + Lossy}
+\label{sss.lossyresidual}
+
+\subsubsection{Algoritmos de Compreesão Contextuais}
+\label{sss.contextbased}
+
+\subsection{Métodos de Domínio de Frequência}
+\label{ss.transformmethod}
