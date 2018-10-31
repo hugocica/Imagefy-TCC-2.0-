@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.29)  30 OCT 2018 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.29)  31 OCT 2018 01:14
 entering extended mode
 **D:/Denis/Documents/workspace/Imagefy-TCC-2.0-/Monografia/projeto.tex
 (D:/Denis/Documents/workspace/Imagefy-TCC-2.0-/Monografia/projeto.tex
@@ -1190,10 +1190,13 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 114.
 Writing index file projeto.idx 
 (projeto.aux
 
-LaTeX Warning: Label `ss.transformmethod' multiply defined.
-
-
 LaTeX Warning: Label `s.github' multiply defined.
+
+
+LaTeX Warning: Label `f.imagecompressionbasics' multiply defined.
+
+
+LaTeX Warning: Label `t.huffmanetapa2' multiply defined.
 
 )
 \openout1 = `projeto.aux'.
@@ -1397,7 +1400,10 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 
 ] (projeto.lot) [10
 
-] (projeto.toc)
+] (projeto.toc
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 37.
+)
 [11
 
 ] (introducao.tex
@@ -1413,7 +1419,7 @@ LaTeX Warning: Citation `linauthor' on page 12 undefined on input line 13.
 ]) (objetivos.tex [13]) (fundamentacao.tex [14
 
 ]
-<figs/image_compression.jpg, id=156, 414.43723pt x 63.74124pt>
+<figs/image_compression.jpg, id=167, 414.43723pt x 63.74124pt>
 File: figs/image_compression.jpg Graphic file (type jpg)
 <use figs/image_compression.jpg>
 Package pdftex.def Info: figs/image_compression.jpg  used on input line 11.
@@ -1422,36 +1428,62 @@ Package pdftex.def Info: figs/image_compression.jpg  used on input line 11.
 
  <./figs/image_compression.jpg>] [16] [17]
 
-LaTeX Warning: Citation `losslesscodings' on page 18 undefined on input line 83
+LaTeX Warning: Citation `losslesscodings' on page 18 undefined on input line 82
 .
 
-<figs/huffman_etapa1.jpg, id=185, 288.03261pt x 313.17pt>
+<figs/huffman_etapa1.jpg, id=196, 288.03261pt x 313.17pt>
 File: figs/huffman_etapa1.jpg Graphic file (type jpg)
 <use figs/huffman_etapa1.jpg>
-Package pdftex.def Info: figs/huffman_etapa1.jpg  used on input line 88.
+Package pdftex.def Info: figs/huffman_etapa1.jpg  used on input line 87.
 (pdftex.def)             Requested size: 144.01595pt x 156.58461pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 94.
+               Default added (so using `tbp') on input line 93.
 
 [18 <./figs/huffman_etapa1.jpg>] [19] [20]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 166.
+               Default added (so using `tbp') on input line 165.
 
-<figs/jpeg_standart.png, id=207, 308.65312pt x 176.15813pt>
+<figs/jpeg_standart.png, id=218, 308.65312pt x 176.15813pt>
 File: figs/jpeg_standart.png Graphic file (type png)
 <use figs/jpeg_standart.png>
-Package pdftex.def Info: figs/jpeg_standart.png  used on input line 187.
+Package pdftex.def Info: figs/jpeg_standart.png  used on input line 186.
 (pdftex.def)             Requested size: 154.32617pt x 88.07884pt.
-) (metodologia.tex [21 <./figs/jpeg_standart.png>] [22]) (projeto.bbl
-(projeto.brf)
+) (metodologia.tex [21 <./figs/jpeg_standart.png>]) (desenvolvimento.tex
+[22
+
+] [23]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 4.
+<figs/Input-Image-1.png, id=235, 153.57375pt x 153.57375pt>
+File: figs/Input-Image-1.png Graphic file (type png)
+<use figs/Input-Image-1.png>
+Package pdftex.def Info: figs/Input-Image-1.png  used on input line 21.
+(pdftex.def)             Requested size: 76.78668pt x 76.78668pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 27.
+
+[24
+
+ <./figs/Input-Image-1.png>]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 61.
+
+("C:\Users\hcica\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+(projeto.bbl (projeto.brf)
 \tf@brf=\write6
 \openout6 = `projeto.brf'.
 
- [23
-
-] [24]
+ [25]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
@@ -1483,7 +1515,7 @@ My plan is to forget the whole thing and hope for the best.
 No file projeto.ind.
 
 AED: lastpage setting LastPage
-[25
+[26
 
 ]
 \tf@lof=\write7
@@ -1512,30 +1544,36 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 389.
  ) 
 Here is how much of TeX's memory you used:
- 24979 strings out of 492970
- 440934 string characters out of 3126593
- 670960 words of memory out of 3000000
- 28143 multiletter control sequences out of 15000+200000
- 89408 words of font info for 143 fonts, out of 3000000 for 9000
+ 25056 strings out of 492970
+ 442264 string characters out of 3126593
+ 671277 words of memory out of 3000000
+ 28203 multiletter control sequences out of 15000+200000
+ 95081 words of font info for 144 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,12n,54p,1444b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
-y.enc}{C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
-athit.enc}{C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
-lm-rm.enc}{C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
-lm-ec.enc}<C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-lm/lmmi12.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmmi8.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/lm/lmr12.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmss10.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/lm/lmss12.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmss17.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/hcica/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:/Users/hcica/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on projeto.pdf (26 pages, 281313 bytes).
+pdfTeX warning (dest): name{page.27} has been referenced but does not exist, 
+replaced by a fixed one
+
+{C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
+{C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.
+enc}{C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
+hit.enc}{C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm
+-rm.enc}<C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
+/lmmi12.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmmi8.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr12.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmss10.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmss12.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmss17.pfb><C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/hcica/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/hcica/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:/Users/hcica/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/lm/lmsso17.pfb><C:/Users/hcica/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/hcica/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on projeto.pdf (27 pages, 353961 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
- 22836 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 449 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 24401 words of extra memory for PDF output out of 24883 (max. 10000000)
 

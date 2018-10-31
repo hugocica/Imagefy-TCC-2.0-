@@ -1,0 +1,80 @@
+\chapter{Desenvolvimento}
+\label{c.desenvolvimento}
+
+\section{Utilizando Métodos {\em LossLess}}
+\label{s.losslessdev}
+
+Para o método sem perda escolhido foi a Codificação de Huffman, por ser uma técnica simples e fácil de aplicar. A técnica, como descrita no Capítulo 2, se baseia em remover a redundância de bits ao analisar diferentes características ou especificações.
+
+\subsection{Codificação de Huffman}
+\label{ss.huffmandev}
+
+O primeiro passo nessa técnica é de reduzir a imagem original em um histograma ordenado, onde a probabilidade de ocorrência de um certo valor de intensidade de um pixel é igual a \[ PP = NP / T \] onde {\em PP} é a probabilidade de ocorrência, {\em NP} é o número de pixels de mesma intensidade e {\em T} o número total de pixels contidos na imagem original.
+
+Histograma é a representação gráfica em colunas ou em barras de um conjunto de dados previamente tabulado e dividido em classes uniformes ou não uniformes.
+
+Dada a seguinte imagem:
+
+\begin{figure}[h]
+\caption{\small Imagem 8x8 pixels}
+\centering
+\includegraphics[scale=0.50]{figs/Input-Image-1.png}
+\label{f.imagecompressionbasics}
+\end{figure}
+
+Ao se fazer seu histograma, temos:
+
+\begin{table}[]
+    \begin{center}
+        \caption{\small Valores de intensidade de pixels}
+        \label{t.imagecompressionbasics}
+        \begin{tabular}{llrlllll}
+            128 & 75  & 72  & 105 & 149 & 169 & 127 & 100 \\
+            122 & 84  & 83  & 84  & 146 & 138 & 142 & 139 \\
+            118 & 98  & 89  & 94  & 136 & 96  & 143 & 188 \\
+            122 & 106 & 79  & 115 & 148 & 102 & 127 & 167 \\
+            127 & 115 & 106 & 94  & 115 & 124 & 103 & 155 \\
+            125 & 115 & 130 & 140 & 170 & 174 & 115 & 136 \\
+            127 & 110 & 122 & 163 & 175 & 140 & 119 & 87  \\
+            146 & 114 & 127 & 140 & 131 & 142 & 153 & 93
+        \end{tabular}
+    \end{center}
+\end{table}
+
+A imagem contém 46 valores de intensidade distintos, portanto terá 46 símbolos únicos no dicionário de Huffman.
+
+O método de Huffman pode ser separado da seguinte forma:
+
+\begin{alineas}
+    \item Ler a imagem como um vetor 2D
+    \item Definir a estrutura que irá conter os valores de intensidade
+    \item Definir outra estrutura que irá
+\end{alineas}
+
+\subsubsection{Ler a imagem como um vetor 2D}
+\label{sss.imagetoarray}
+
+Primeiramente, temos que transformar a imagem em um vetor 2D. Para isso, utilizamos a seguinte função em PHP:
+
+\begin{verbatim}
+public function image_to_array( $image ) {
+    $width = imagesx($image);
+    $height = imagesy($image);
+    $colors = array();
+
+    // percorre os pixel por coluna
+    for  ($y = 0; $y < $height; $y++ ) {
+        // percorre os pixels por linha
+        for ($x = 0; $x < $width; $x++) {
+            // retorna o índice da cor de um pixel no local especificado
+            $rgb = imagecolorat($image, $x, $y);
+            $r = ($rgb >> 16) & 0xFF;
+            $g = ($rgb >> 8) & 0xFF;
+            $b = $rgb & 0xFF;
+
+            $black = ($r == 0 && $g == 0 && $b == 0);
+            $colors[$x][$y] = $black;
+        }
+    }
+}
+\end{verbatim}
