@@ -1,0 +1,10 @@
+\chapter{Conclusão}
+\label{c.conclusao}
+
+Tendo-se em mente os métodos estudados de compressão sem perda, o método de Huffman foi escolhido por ter sua aplicação simples e fácil, e um ponto importante foi a falta de pantente, tornando a utilização desse método em aplicações comerciais sem nenhum custo.
+
+Embora o algoritmo desse método seja ótimo para codificação símbolo a símbolo com uma distribuição de probabilidade conhecida, quando este caso não ocorre, não se torna tão vantajoso assim. Esse método pode ser utilizado em conjunto com outros, para garantir um melhor desempenho. Ferramentas de compactação, como o GZIP, se utilizam disso para realizar as compressões em sistemas Linux.
+
+Durante o desenvolvimento, foram encontradas dificuldades durante o processo, principalmente para retornar ao estado de uma imagem, decodificando os resultados da Árvore de Huffman.
+
+Atualmente, a busca por maior compressão de itens estáticos, como imagens, tem aumentado e muito. Com esse fator, o número de ferramentas disponíveis para tal tem aumentado também, porém a taxa de compressão é variada, sempre tendo uma busca pelo que melhor se adapa ao desejado. Ferramentas como TinyPNG, utilizada durante a fase de testes e comparação, ou Cloudinary, aplicação online a qual permite hospedagem de imagens e arquivos estáticos bem como sua otimização tanto na qualidade, como também usando métodos de recorte o qual também diminui seu espaço em disco, são amplamente usadas no dia a dia, tanto de aplicações mais gerais, como também de sites e blogs pela internet.

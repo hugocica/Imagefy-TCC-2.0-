@@ -28,3 +28,43 @@ Lossless:
 - https://whatis.techtarget.com/definition/image-compression
 - https://imagify.io/blog/lossless-vs-lossy-image-compression/
 - https://www.shawacademy.com/blog/what-is-raw-photo/
+
+JPEG COMPRESSION
+Named after its founding committee the Joint Photographics Expert Group, JPEG files were designed to reduce image sizes for better image optimization. JPEG compression can create millions of colors by mixing and combining 3 primary colors — red, blue, and green. This makes JPEGs ideal for photography and photorealism; however, they are lossy and not lossless, so it rarely creates perfect compressions.
+
+
+
+GIF COMPRESSION
+The Graphic Interchange Format relies on a fixed palette of 256 colors, restricting its range of colors but keeping file sizes small. GIFs are perfect for simple animations and icons, but a poor choice for detailed images due to their limited colors.
+
+
+
+PNG COMPRESSION
+Somewhere in the middle of JPEG and GIFs lies Portable Network Graphics, which has two variants: PNG-8 and PNG-24.
+
+Like GIFs, PNG-8 uses the same 256-color palette, but has better transparency options and usually exports slightly smaller files. However, PNG-8 does not have GIF’s animation options.
+
+The lossless PNG-24 format is for more complex images, able to recreate millions of colors like JPEG compression. Unlike JPEGs, PNG-24 offers better transparency options, but is not as compatible with as many apps and platforms as JPEG. PNG-24 are also easier to edit without reducing quality.
+
+
+public function image_to_array( $image ) {
+	$width = imagesx($image);
+	$height = imagesy($image);
+	$colors = array();
+
+	// percorre os pixel por coluna
+	for ($y = 0; $y < $height; $y++ ) {
+
+	// percorre os pixels por linha
+		for ($x = 0; $x < $width; $x++) {
+		
+			// retorna o índice da cor de um pixel no local especificado
+			$rgb = imagecolorat($image, $x, $y);
+			$r = ($rgb >> 16) & 0xFF;
+			$g = ($rgb >> 8) & 0xFF;
+			$b = $rgb & 0xFF;
+			$black = ($r == 0 && $g == 0 && $b == 0);
+			$colors[$x][$y] = $black;
+		}
+	}
+}

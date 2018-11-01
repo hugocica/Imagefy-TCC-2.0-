@@ -46,35 +46,59 @@ A imagem contém 46 valores de intensidade distintos, portanto terá 46 símbolo
 O método de Huffman pode ser separado da seguinte forma:
 
 \begin{alineas}
-    \item Ler a imagem como um vetor 2D
-    \item Definir a estrutura que irá conter os valores de intensidade
-    \item Definir outra estrutura que irá
+    \item Construir a Árvore de Huffman
+    \item Voltar todo o processo até que chegue ao nó inicial, atribuindo 0 ou 1 para cada nó intermediário, até que chegue ao nó da base.
 \end{alineas}
 
-\subsubsection{Ler a imagem como um vetor 2D}
-\label{sss.imagetoarray}
+\subsubsection{Construir a Árvore de Huffman}
+\label{sss.huffmantree}
 
-Primeiramente, temos que transformar a imagem em um vetor 2D. Para isso, utilizamos a seguinte função em PHP:
+A figura \ref{f.imagebeezu} foi utilizada para testes durante o desenvolvimento.
 
-\begin{verbatim}
-public function image_to_array( $image ) {
-    $width = imagesx($image);
-    $height = imagesy($image);
-    $colors = array();
+\begin{figure}[h]
+\caption{\small beezu.jpg, dimensão 1280x1280, 240KB}
+\centering
+\includegraphics[scale=0.25]{figs/beezu.jpg}
+\label{f.imagebeezu}
+\end{figure}
 
-    // percorre os pixel por coluna
-    for  ($y = 0; $y < $height; $y++ ) {
-        // percorre os pixels por linha
-        for ($x = 0; $x < $width; $x++) {
-            // retorna o índice da cor de um pixel no local especificado
-            $rgb = imagecolorat($image, $x, $y);
-            $r = ($rgb >> 16) & 0xFF;
-            $g = ($rgb >> 8) & 0xFF;
-            $b = $rgb & 0xFF;
+Para isso, precisamos primeiramente transformar a cadeia de caracteres da imagem em um vetor de caracteres. Tendo cada caracter num vetor, é feita uma contagem da frequência de cada caracter.
 
-            $black = ($r == 0 && $g == 0 && $b == 0);
-            $colors[$x][$y] = $black;
-        }
-    }
-}
-\end{verbatim}
+A partir disso é possível construir uma Árvore de Huffman. Isso é feito ao percorrer o {\em array} de frequências, inserindo cada caracter como um nó na Árvore de Huffman partindo pelos dois símbolos de menor frequência, que então são somados em símbolos auxiliares, sendo estes símbolos realocados no conjunto de símbolos. Tendo contruído a Árvore, percorremos ela, atribuindo valores binários para cada aresta.
+
+\begin{figure}[h]
+\caption{\small Representação da Árvore de Huffman da Figura 5}
+\centering
+\includegraphics[scale=0.08]{figs/beezu_huffman.PNG}
+\label{f.imagebeezutree}
+\end{figure}
+
+\subsubsection{Reconstruir a Imagem Utilizando a Árvore de Huffman}
+\label{sss.huffmantreebacktrack}
+
+Começando do nó inicial, atribuimos a 0 para a esquerda e 1 para os nós da direita. Como estamos adicionando os nós recém formados ao {\em array} de frequência
+
+\subsubsection{Resultados e Comparações}
+\label{sss.results}
+%
+Pelos testes realizados, já foi possível notar uma diferença no tamanho da cadeia de caracteres gerada pela imagem. A imagem original, sua cadeia de caracteres possui um tamanho de 328864, enquanto que sua versão otimizada 197636.
+% \begin{figure}[h]
+% \caption{\small Fonte: Original - 240KB}
+% \centering
+% \includegraphics[scale=0.25]{figs/beezu.jpg}
+% \label{f.imagebeezuo}
+% \end{figure}
+%
+% \begin{figure}[h]
+% \caption{\small Fonte: Testes - 213KB}
+% \centering
+% \includegraphics[scale=0.25]{figs/beezu.jpg}
+% \label{f.imagebeezur}
+% \end{figure}
+%
+% \begin{figure}[h]
+% \caption{\small Fonte: TinyPNG - 141KB}
+% \centering
+% \includegraphics[scale=0.25]{figs/beezu.jpg}
+% \label{f.imagebeezut}
+% \end{figure}

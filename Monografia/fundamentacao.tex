@@ -187,5 +187,17 @@ Essa abordagem JPEG utiliza de técnicas de código preditivo e é totalmente in
 \label{f.jpegstandart}
 \end{figure}
 
-% \subsection{Métodos de Domínio de Frequência}
-% \label{ss.transformmethod}
+\subsection{Métodos de Domínio de Frequência}
+\label{ss.transformmethod}
+
+Métodos desse tipo apresentam algoritmos de transformadas que exploram as informações da frequência espacial contidas na imagem. Para compactação do tipo {\em lossless}, o tipo mais popular de métodos com base em transformadas é o de transformadas sequenciais. Embora esse método seja eficiente, \citeauthor{kuduvalli} mostram que esse método não é tão eficiente quanto o método de codificação por predição.
+
+\subsubsection{Transformada S+P}
+\label{sss.sandptransform}
+
+Esse tipo de transformada foi desenvolvida para sanar o ponto fraco da transformada sequencial, onde {\em P} é a sigla para predição. Esse tipo de transformada requer apenas adição de inteiros e operações de deslocamento de bit. Por usar escalas e truncamentos, é possível representar a imagem mantendo o número de bits baixo.
+
+\subsubsection{Transformada de Wavelet}
+\label{sss.wavelet}
+
+Esse tipo de transformada geralmente é usada para técnicas do tipo {\em lossy}, porém pode ser utilizada para técnicas {\em lossless}.

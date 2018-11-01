@@ -3,6 +3,7 @@ The style file: abntex2-alf.bst
 Database file #1: abntex2-options.bib
 Database file #2: references.bib
 Warning--campo year vazio ou faltando em losslesscodings
+Warning--campo year vazio ou faltando em kuduvalli
 Warning--campo year vazio ou faltando em mackenzielossless
 Warning--campo year vazio ou faltando em losslessmethods
 +---------------------------------------------------------+
@@ -10,4 +11,4 @@ Warning--campo year vazio ou faltando em losslessmethods
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-(There were 3 warnings)
+(There were 4 warnings)

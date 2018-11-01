@@ -18,6 +18,15 @@ ISBN 09759646.}
   \url{http://access.ee.ntu.edu.tw/course/SOC2004/Version%203/Case%20Study/Ref/Lossy%20Image%20Compression.pdf}.
 [Acessado em 14 de Agosto de 2018].}
 
+\bibitem[Kuduvalli e Rangayyan]{kuduvalli}
+\abntrefinfo{Kuduvalli e Rangayyan}{KUDUVALLI; RANGAYYAN}{}
+{KUDUVALLI, G.; RANGAYYAN, R. Performance analysis of reversible image
+  compression techniques for high-resolution digital teleradiology. In:
+  \emph{Revista Mackenzie de Engenharia e Computação}. Ano 5. [s.n.]. p. 34
+  -- 43.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/B9780123736246500059}.}
+
 \bibitem[Lin 2009]{linauthor}
 \abntrefinfo{Lin}{LIN}{2009}
 {LIN, P. \emph{Basic Image Compression Algorithm and Introduction to JPEG
@@ -25,18 +34,19 @@ ISBN 09759646.}
   \url{http://disp.ee.ntu.edu.tw/meeting/%E4%BF%9D%E8%A8%80/Basic%20Image%20Compression%20Algorithm%20and%20Introduction%20of%20JPEG%20Standard/Basic%20Image%20Compression%20Algorithm%20and%20Introduction%20of%20JPEG%20Standard.pdf}.
 [Acessado em 22 de Maio de 2018].}
 
-\bibitem[Ranganathan, S.G. e Namuduri 1995]{ranganathan}
-\abntrefinfo{Ranganathan, S.G. e Namuduri}{RANGANATHAN; S.G.; NAMUDURI}{1995}
+\bibitem[Ranganathan, S.G. e Namuduri 1992]{ranganathan}
+\abntrefinfo{Ranganathan, S.G. e Namuduri}{RANGANATHAN; S.G.; NAMUDURI}{1992}
 {RANGANATHAN, N.; S.G., R.; NAMUDURI, K. A lossless image compression algorithm
-  usin bariable block size segmentation. In:  \emph{IEEE Transactions on Image
-  Processing}. Vol 4. [s.n.], 1995. p. 1396--1406.
+  usin bariable block size segmentation. In:  \emph{IEEE Transactions on
+  Medical Imaging}. Vol 11. [s.n.], 1992.
 Dispon{\'\i}vel em:
-  \url{http://www.sciencedirect.com/science/article/pii/B9780123736246500059}.}
+  \url{https://ieeexplore.ieee.org/document/158947/authors\#authors}.}
 
-\bibitem[Rao]{mackenzielossless}
-\abntrefinfo{Rao}{RAO}{}
-{RAO, V. B. C.~Y. Capítulo 3 - processos de compressÃo. In:  \emph{Revista
-  Mackenzie de Engenharia e Computação}. Ano 5. [s.n.]. p. 34 -- 43.
+\bibitem[Rao, Patrick e YipK]{mackenzielossless}
+\abntrefinfo{Rao, Patrick e YipK}{RAO; PATRICK; YIPK}{}
+{RAO, V.; PATRICK, C.; YIPK, R. Capítulo 3 - processos de compressÃo. In:
+  \emph{Revista Mackenzie de Engenharia e Computação}. Ano 5. [s.n.]. p. 34
+  -- 43.
 Dispon{\'\i}vel em:
   \url{http://www.sciencedirect.com/science/article/pii/B9780123736246500059}.}
 
