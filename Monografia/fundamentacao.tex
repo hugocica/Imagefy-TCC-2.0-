@@ -200,4 +200,24 @@ Esse tipo de transformada foi desenvolvida para sanar o ponto fraco da transform
 \subsubsection{Transformada de Wavelet}
 \label{sss.wavelet}
 
-Esse tipo de transformada geralmente é usada para técnicas do tipo {\em lossy}, porém pode ser utilizada para técnicas {\em lossless}.
+Esse tipo de transformada geralmente é usada para técnicas do tipo {\em lossy}, porém pode ser utilizada para técnicas {\em lossless}. Uma maneira de calcular uma transformada de Wavelet é através de uma reescrita da transformada sequencial usando o método de levantamento.
+
+Nesse método, são reescritas as equações da transformada sequencial da seguinte forma:
+
+\[ d[n] = c[2n +1] - c[2n] \]
+\[ l[n] = c[2n] + (d[n]/2) \]
+
+Essas equações são idênticas à transformada sequencial pois:
+
+\[ c[2n] + (d[n]/2) = c[2n] + (c[2n + 1]/2 - c[2n]/2) \]
+
+A transformada inversa pode ser escrita como
+
+\[ c[2n] = l[n] - (d[n]/2) \]
+\[ c[2n + 1] = d[n] + c[2n] \]
+
+Após algumas manipulações algébricas é possível verificar que é semelhante a transformada sequencial inversa.
+
+Em geral, o conceito de levantamento de uma transformada consiste em separar uma sequência de entrada em amostras indexadas pares e ímpares seguida por uma repetição alternada da aplicação de levantamento e passos de levantamento duplo. Os passos de levantamento envolvem aplicar um filtro para as amostras ímpares e subtraindo o resultado das amostras pares. O passo de levantamento duplo realiza o oposto, aplicando um filtro para  as amostras pares e subtraindo o resultado das amostras ímpares.
+
+A implementação da técnica de levantamente em transformadas Wavelet tem inúmeras vantagens se comparadas a transformada de Wavelet tradicional, sendo uma delas a de consumir menos recursos.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.29)  1 NOV 2018 02:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.29)  1 NOV 2018 03:36
 entering extended mode
 **D:/Denis/Documents/workspace/Imagefy-TCC-2.0-/Monografia/projeto.tex
 (D:/Denis/Documents/workspace/Imagefy-TCC-2.0-/Monografia/projeto.tex
@@ -1538,11 +1538,11 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `projeto.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 389.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
  (projeto.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 389.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 397.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
 Package rerunfilecheck Info: File `projeto.brf' has not changed.
 (rerunfilecheck)             Checksum: 517E83132961B9E1A208622D6133E032;495.
 
@@ -1552,14 +1552,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 389.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
  ) 
 Here is how much of TeX's memory you used:
- 25068 strings out of 492970
- 442392 string characters out of 3126593
- 673652 words of memory out of 3000000
+ 25074 strings out of 492970
+ 442466 string characters out of 3126593
+ 673699 words of memory out of 3000000
  28195 multiletter control sequences out of 15000+200000
- 95287 words of font info for 147 fonts, out of 3000000 for 9000
+ 95695 words of font info for 150 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,12n,54p,1444b,525s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/hcica/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
@@ -1578,7 +1578,7 @@ KTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/hcica/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:/Users/hcica/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso17.pfb><C:/Users/hcica/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on projeto.pdf (31 pages, 859260 bytes).
+Output written on projeto.pdf (31 pages, 862541 bytes).
 PDF statistics:
  504 PDF objects out of 1000 (max. 8388607)
  115 named destinations out of 1000 (max. 500000)
