@@ -3,6 +3,8 @@
 
 Tendo-se em mente os métodos estudados de compressão sem perda, o método de Huffman foi escolhido por ter sua aplicação simples e fácil, e um ponto importante foi a falta de pantente, tornando a utilização desse método em aplicações comerciais sem nenhum custo.
 
+A partir do desenvolvimento e dos testes, foi possível ver que o método de Huffman é um método de fácil aplicação, porém ele por si só não é ótimo, visto que a mesma imagem utilizada otimizada pela ferramenta online TinyPNG, obteve melhor resultado na compressão. Como apontado durante a fase de pesquisa, é possível combinar esse método em questão com outros, buscando obter resultados melhores. Além de que, utilizando este método, o foco era testar metodologias {\em lossless}, as quais não sofrem perda de bits, podendo retornar para seu estado inicial.
+
 Embora o algoritmo desse método seja ótimo para codificação símbolo a símbolo com uma distribuição de probabilidade conhecida, quando este caso não ocorre, não se torna tão vantajoso assim. Esse método pode ser utilizado em conjunto com outros, para garantir um melhor desempenho. Ferramentas de compactação, como o GZIP, se utilizam disso para realizar as compressões em sistemas Linux.
 
 Durante o desenvolvimento, foram encontradas dificuldades durante o processo, principalmente para retornar ao estado de uma imagem, decodificando os resultados da Árvore de Huffman.

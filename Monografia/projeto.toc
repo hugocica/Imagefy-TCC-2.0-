@@ -16,35 +16,35 @@
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{16}{chapter.3}
 \contentsline {section}{\numberline {3.1}M\IeC {\'e}todos de Compress\IeC {\~a}o de Imagem Sem Perda}{16}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Performance}{17}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}M\IeC {\'e}todos de Codifica\IeC {\c c}\IeC {\~a}o}{17}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}M\IeC {\'e}todos de Codifica\IeC {\c c}\IeC {\~a}o}{18}{subsection.3.1.2}
 \contentsline {subsubsection}{\numberline {3.1.2.1}Lineariza\IeC {\c c}\IeC {\~a}o}{18}{subsubsection.3.1.2.1}
 \contentsline {subsubsection}{\numberline {3.1.2.2}Codifica\IeC {\c c}\IeC {\~a}o de Huffman}{19}{subsubsection.3.1.2.2}
-\contentsline {subsubsection}{\numberline {3.1.2.3}Codifica\IeC {\c c}\IeC {\~a}o por LZW}{20}{subsubsection.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.1.2.3}Codifica\IeC {\c c}\IeC {\~a}o por LZW}{19}{subsubsection.3.1.2.3}
 \contentsline {subsubsection}{\numberline {3.1.2.4}Codifica\IeC {\c c}\IeC {\~a}o por C\IeC {\'o}digo de Tons Corridos (RLE)}{20}{subsubsection.3.1.2.4}
 \contentsline {subsection}{\numberline {3.1.3}M\IeC {\'e}todos de Dom\IeC {\'\i }nio Espacial}{21}{subsection.3.1.3}
 \contentsline {subsubsection}{\numberline {3.1.3.1}Compress\IeC {\~a}o de Tamanho de Bloco Vari\IeC {\'a}vel}{21}{subsubsection.3.1.3.1}
 \contentsline {subsubsection}{\numberline {3.1.3.2}Abordagem residual + Lossy}{21}{subsubsection.3.1.3.2}
-\contentsline {subsection}{\numberline {3.1.4}M\IeC {\'e}todos de Dom\IeC {\'\i }nio de Frequ\IeC {\^e}ncia}{22}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.4}M\IeC {\'e}todos de Dom\IeC {\'\i }nio de Frequ\IeC {\^e}ncia}{23}{subsection.3.1.4}
 \contentsline {subsubsection}{\numberline {3.1.4.1}Transformada S+P}{23}{subsubsection.3.1.4.1}
 \contentsline {subsubsection}{\numberline {3.1.4.2}Transformada de Wavelet}{23}{subsubsection.3.1.4.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Metodologia}}{24}{chapter.4}
-\contentsline {section}{\numberline {4.1}M\IeC {\'e}todos e Etapas}{24}{section.4.1}
-\contentsline {section}{\numberline {4.2}Materiais Utilizados}{24}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Ambiente de desenvolvimento}{24}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Github}{24}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Codeigniter}{24}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}TinyPNG}{25}{subsection.4.2.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Metodologia}}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}M\IeC {\'e}todos e Etapas}{25}{section.4.1}
+\contentsline {section}{\numberline {4.2}Materiais Utilizados}{25}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Ambiente de desenvolvimento}{25}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Github}{25}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Codeigniter}{25}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}TinyPNG}{26}{subsection.4.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Desenvolvimento}}{26}{chapter.5}
-\contentsline {section}{\numberline {5.1}Utilizando M\IeC {\'e}todos {\em LossLess}}{26}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Codifica\IeC {\c c}\IeC {\~a}o de Huffman}{26}{subsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.1.1}Construir a \IeC {\'A}rvore de Huffman}{27}{subsubsection.5.1.1.1}
-\contentsline {subsubsection}{\numberline {5.1.1.2}Reconstruir a Imagem Utilizando a \IeC {\'A}rvore de Huffman}{28}{subsubsection.5.1.1.2}
-\contentsline {subsubsection}{\numberline {5.1.1.3}Resultados e Compara\IeC {\c c}\IeC {\~o}es}{28}{subsubsection.5.1.1.3}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Desenvolvimento}}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Utilizando M\IeC {\'e}todos {\em Lossless}}{27}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Codifica\IeC {\c c}\IeC {\~a}o de Huffman}{27}{subsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Construir a \IeC {\'A}rvore de Huffman}{28}{subsubsection.5.1.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.2}Reconstruir a Imagem Utilizando a \IeC {\'A}rvore de Huffman}{29}{subsubsection.5.1.1.2}
+\contentsline {subsubsection}{\numberline {5.1.1.3}Resultados e Compara\IeC {\c c}\IeC {\~o}es}{29}{subsubsection.5.1.1.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{29}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{30}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{30}{section*.11}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{31}{section*.11}
 \vspace {\cftbeforechapterskip }
